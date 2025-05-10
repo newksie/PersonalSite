@@ -1,0 +1,88 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #0d1117;
+  color: white;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #1f2937;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section {
+  padding: 3rem 1rem;
+  background: white;
+}
+
+.section.alt {
+  background: #e5e7eb;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+footer {
+  background: #0d1117;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
