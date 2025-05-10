@@ -32,6 +32,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
+nav a.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
 .hero {
   background: #1f2937;
   color: white;
