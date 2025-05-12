@@ -34,6 +34,40 @@
           </iframe>
         </div>
       <p>UKHSA Project</p>
+      <!-- Section for your chart toggle -->
+        <section>
+          <h2>Chart Toggle</h2>
+          <p>Click the button to switch between a bar chart and a dot plot.</p>
+
+          <!-- Image element (initially showing the bar chart) -->
+          <img id="chart" src="images/filledcsv.png" alt="Chart" style="max-width: 100%; height: auto;">
+
+          <!-- Button to switch image -->
+          <button onclick="toggleChart()">Switch to Dot Plot</button>
+
+          <!-- JavaScript to handle toggling -->
+          <script>
+            // Variable to keep track of which image is currently shown
+            let showingBar = true;
+
+            // Function to toggle between the two images
+            function toggleChart() {
+              const img = document.getElementById("chart"); // Get the image element
+              const button = document.querySelector("button"); // Get the button
+
+              if (showingBar) {
+                img.src = "images/dottycsv.png";  // Swap to dot plot image
+                button.textContent = "Switch to Bar Chart"; // Update button text
+              } else {
+                img.src = "images/filledcsv.png";  // Swap back to bar chart
+                button.textContent = "Switch to Dot Plot"; // Update button text
+              }
+
+              showingBar = !showingBar; // Flip the flag
+            }
+          </script>
+        </section>
+
       <p>Workshops and prompt site</p>
     </div>
   </section>
