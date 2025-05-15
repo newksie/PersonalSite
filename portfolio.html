@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your AI Consultancy</title>
+  <title>Oliver Newcombe</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Your AI Consultancy</h1>
+      <h1>Oliver Newcombe</h1>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -24,8 +24,11 @@
   <section class="section">
     <div class="container">
       <h2>Past Projects</h2>
-      <p>MHCLG Projects</p>
-        <div style="width: 130%; height: 1000px;">
+      <h3>MHCLG</h3>
+      <p>As part of my work at Faculty I developed a tool to identify where listed conservation areas differ from the 
+        nearby features present on a map. This will allow planning workers to identify potential errors in specified 
+        conservation area designations. An example is shown in the interactive map below, where cut off corners are identified.</p>
+        <div style="width: 100%; height: 650px;">
           <iframe 
             src="maps/sleapshyde.html" 
             style="width: 100%; height: 100%; border: none;"
@@ -33,48 +36,53 @@
             title="Interactive Map">
           </iframe>
         </div>
-      <p>UKHSA Project</p>
+      <p>We also created an embedding based search tool to correct important legal links across council webpages, achieving 
+        95% top-3 accuracy. Investigate our code <a href="https://github.com/digital-land/quality-challenge">here</a>.</p>
+      <h3>UKHSA</h3>
       <!-- Section for your chart toggle -->
-        <section>
-          <h2>Chart Toggle</h2>
-          <p>Click the button to switch between a bar chart and a dot plot.</p>
+        <p>We wrote a foundational civil service report investigating the use of LLMs for translation from English into a 
+          range of languages for effective communication of health related information. We evaluated the performance of a range
+          of LLMs and languages, a snapshot of our results are shown below, click the button to switch between a bar chart and
+          individual translation datapoints.</p>
 
-          <!-- Image element (initially showing the bar chart) -->
-          <img id="chart" src="images/filledcsv.png" alt="Chart" style="max-width: 100%; height: auto;">
+        <!-- Image element (initially showing the bar chart) -->
+        <img id="chart" src="images/filledcsv.png" alt="Chart" style="max-width: 100%; height: auto;">
 
-          <!-- Button to switch image -->
-          <button onclick="toggleChart()">Switch to Dot Plot</button>
+        <!-- Button to switch image -->
+        <button onclick="toggleChart()">Switch to Dot Plot</button>
 
-          <!-- JavaScript to handle toggling -->
-          <script>
-            // Variable to keep track of which image is currently shown
-            let showingBar = true;
+        <!-- JavaScript to handle toggling -->
+        <script>
+          // Variable to keep track of which image is currently shown
+          let showingBar = true;
 
-            // Function to toggle between the two images
-            function toggleChart() {
-              const img = document.getElementById("chart"); // Get the image element
-              const button = document.querySelector("button"); // Get the button
+          // Function to toggle between the two images
+          function toggleChart() {
+            const img = document.getElementById("chart"); // Get the image element
+            const button = document.querySelector("button"); // Get the button
 
-              if (showingBar) {
-                img.src = "images/dottycsv.png";  // Swap to dot plot image
-                button.textContent = "Switch to Bar Chart"; // Update button text
-              } else {
-                img.src = "images/filledcsv.png";  // Swap back to bar chart
-                button.textContent = "Switch to Dot Plot"; // Update button text
-              }
-
-              showingBar = !showingBar; // Flip the flag
+            if (showingBar) {
+              img.src = "images/dottycsv.png";  // Swap to dot plot image
+              button.textContent = "Switch to Bar Chart"; // Update button text
+            } else {
+              img.src = "images/filledcsv.png";  // Swap back to bar chart
+              button.textContent = "Switch to Dot Plot"; // Update button text
             }
-          </script>
-        </section>
 
-      <p>Workshops and prompt site</p>
+            showingBar = !showingBar; // Flip the flag
+          }
+        </script>
+
+      <h3>Workshops</h3>
+      <p>I teach workshops on topics from basic python to fine-tuning LLMs. My most recent covers embeddings and LLM APIs width
+        an interactive leaderboard for prompt engineering, found <a href="https://github.com/newksie/LLMWorkshop">here</a>. 
+        More foundational skills can be found <a href="https://github.com/newksie/Workshops">here</a>.</p>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Your AI Consultancy. All rights reserved.</p>
+      <p>&copy; 2025 Oliver Newcombe. All rights reserved.</p>
     </div>
   </footer>
 </body>
