@@ -30,7 +30,7 @@
         conservation area designations. An example is shown in the interactive map below, where cut off corners are identified.</p>
         <div style="width: 100%; height: 650px;">
           <iframe 
-            src="maps/sleapshyde.html" 
+            src="files/maps/sleapshyde.html" 
             style="width: 100%; height: 100%; border: none;"
             scrolling="no"
             title="Interactive Map">
@@ -46,7 +46,7 @@
           individual translation datapoints.</p>
 
         <!-- Image element (initially showing the bar chart) -->
-        <img id="chart" src="images/filledcsv.png" alt="Chart" style="max-width: 100%; height: auto;">
+        <img id="chart" src="files/images/filledcsv.png" alt="Chart" style="max-width: 100%; height: auto;">
 
         <!-- Button to switch image -->
         <button onclick="toggleChart()">Switch to Dot Plot</button>
@@ -62,16 +62,23 @@
             const button = document.querySelector("button"); // Get the button
 
             if (showingBar) {
-              img.src = "images/dottycsv.png";  // Swap to dot plot image
+              img.src = "files/images/dottycsv.png";  // Swap to dot plot image
               button.textContent = "Switch to Bar Chart"; // Update button text
             } else {
-              img.src = "images/filledcsv.png";  // Swap back to bar chart
+              img.src = "files/images/filledcsv.png";  // Swap back to bar chart
               button.textContent = "Switch to Dot Plot"; // Update button text
             }
 
             showingBar = !showingBar; // Flip the flag
           }
         </script>
+      <h3>AI Safety Research</h3>
+      <p>
+        I worked with the Future of Humanity Institute in Oxford to investigate Inverse Reinfinement Learning (IRL) and improve
+        efficiency via novel Bayesian approaches. Read more in our NeurIPS paper 
+        <i><a href="https://arxiv.org/pdf/2501.00381">Toward Information Theoretic Active Inverse
+          Reinforcement Learning</a></i>.
+      </p>
 
       <h3>Workshops</h3>
       <p>I teach workshops on topics from basic python to fine-tuning LLMs. My most recent covers embeddings and LLM APIs width
